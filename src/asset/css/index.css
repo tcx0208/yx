@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,body,#root,.router{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  
+}
+#root .swiper-button-next{
+  left: 50% !important;
+  bottom:0.3rem !important;
+  top: auto !important;
+  background-image: url(../img/top.png) !important;
+  background-size: auto;
+  margin-left: -0.23rem;
+  animation: webSwipeTipAfter 1.5s infinite ease-in-out;
+
+}
+
+@keyframes webSwipeTipAfter {
+  0% {
+      opacity: 1
+  }
+
+  to {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      opacity: 0
+  }
+}
+
+.StartScene{
+  width: 100%;
+  height: 100%;
+  background:url(../img/wenzi1.webp),url(../img//star.webp) ,url(../img/bg2.webp);
+  background-size:19rem auto,100% auto, auto 100%;
+  background-position:center 4rem, center bottom,center;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+.StartScene>button{
+  width: 10rem;
+  height: 3rem;
+  background: url(../img/btn1.webp);
+  background-size:100% 100%;
+  position: absolute;
+  left: 40%;
+  margin-left: -1.8rem;
+  bottom: 5rem;
+  border: none;
+}
+
+.StartScene>img{
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: img1 1.5s ease-in-out;
+}
+
+/* 场景2：BriefScene */
+.BriefScene{
+  width: 100%;
+  height: 100%;
+  background:url(../img/chengqiang.webp) no-repeat,url(../img/tu1.webp) no-repeat,url(../img/zi0.webp) no-repeat,url(../img/hua1.webp) no-repeat ,url(../img/bg3.webp) no-repeat 100% 100%;
+  background-size: auto 7.5rem,10rem 10rem,5rem auto,8rem auto,auto;
+  background-position:center bottom, center 7rem,right top,left top,left;
+}
+
+.BriefScene>p{
+  font-size: 1rem;
+  position: absolute;
+  width: 15rem;
+  left: 20%;
+  top: 20rem;
+}
+
+.BriefScene>button{
+  width: 10rem;
+  height: 3rem;
+  background: url(../img/btn2.webp) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 40%;
+  margin-left: -1.5rem;
+  top: 30rem;
+  border: none;
+}
+/* 场景3：答题场景 */
+.AnswerScene {
+  width: 100%;
+  height: 100%;
+  background:url(../img/chengqiang.webp) no-repeat,url(../img/zi0.webp) no-repeat,url(../img/hua1.webp) no-repeat ,url(../img/bg3.webp) no-repeat 100% 100%;
+  background-size: auto 7.5rem,5rem auto,8rem auto,auto;
+  background-position: center bottom,right top,left top,left;
+}
+
+.AnswerScene>p {
+  font-size: 1rem;
+  width: 15rem;;
+  text-align: center;
+  position: absolute;
+
+  left: 30%;
+  margin-left: -2.8rem;
+  top: 30%;
+}
+
+.AnswerScene>button:nth-child(2) {
+  width: 8rem;
+  height: 1.5rem;
+  background: url(../img/btn4.webp) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 40%;
+  margin-left: -1.5rem;
+  top: 20rem;
+  border: none;
+}
+.AnswerScene>button:nth-child(3) {
+  width: 8rem;
+  height: 1.5rem;
+  background: url(../img/btn4.webp) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 40%;
+  margin-left: -1.5rem;
+  top: 23rem;
+  border: none;
+}
+.AnswerScene>button:nth-child(4) {
+  width: 8rem;
+  height: 1.5rem;
+  background: url(../img/btn4.webp) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 40%;
+  margin-left: -1.5rem;
+  top: 26rem;
+  border: none;
+}
+/* 场景4：结果场景 */
+.ResultScene{
+    width: 100%;
+    height: 100%;
+    background:url(../img/kuang1.webp) no-repeat,url(../img/hua3.webp) no-repeat ,url(../img/hua2.webp) no-repeat ,url(../img/bg3.webp) no-repeat 100% 100%;
+    background-size:23rem auto,5rem auto,5rem auto,auto;
+    background-position:center 9rem,left top,right bottom,left;
+    position: relative;
+  }
+
+.ResultScene h2{
+position: absolute;
+top: 5rem;
+left:3rem;
+}
+.ResultScene h3{
+  font-size: 3rem;
+  color: #b30707e8;
+  position: absolute;
+  top: 9rem;
+  left:3rem;
+}
+.ResultScene h4{
+  width:8rem;
+  font-size: 2rem;
+  color: #b30707e8;
+  position: absolute;
+  top: 13rem;
+  left:3rem;
+}
+ 
+.ResultScene img{
+  width: 10rem;
+  
+  position: absolute;
+  top: 10rem;
+  right:1rem;
+} 
+.ResultScene p{
+  width: 20rem;
+  position: absolute;
+  top: 20rem;
+  left: 2rem;
+} 
+
+.ResultScene button{
+  width: 8rem;
+  height: 2rem;
+  background: url('../img/btn3.webp');
+  background-size: 100% 100%;
+ 
+}
+.ResultScene .zdyc{
+  position: absolute;
+  right: 10%;
+  bottom: 15%; 
+  margin-left: -1.5rem;
+  border: none; 
+}
+.ResultScene .gywm{
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  margin-left: -1.5rem;
+  border: none; 
+}
+
+
+.Guanyuwomen{
+  width: 100%;
+  height: 100%;
+  background:url(../img/bg4.webp) no-repeat ,url(../img/hua3.webp) no-repeat ,url(../img/hua2.webp) no-repeat ,url(../img/bg3.webp) no-repeat 100% 100%;
+  background-size:15rem auto,5rem auto,5rem auto,auto;
+  background-position:center 23rem,left top,right bottom,left;
+  position: relative;
+}
+.Guanyuwomen .title{
+  width: 15rem;
+ height: 5rem;
+ 
+ position: absolute;
+  top: 5rem;
+  left: 4rem;;
+ font-size: 2.5rem;
+ text-align: center;
+  background: url(../img/btn5.webp) no-repeat;
+  background-size: 100% auto;
+  
+}
+
+.Guanyuwomen p{
+position: absolute;
+ top: 8rem;
+ font-size: 1rem;
+ padding: 3rem;
+}
+
+.Guanyuwomen .zdyc{
+  width: 8rem;
+  height: 2rem;
+  background: url('../img/btn3.webp');
+  background-size: 100% 100%;
+  position: absolute;
+  right: 10%;
+  bottom: 10%; 
+  margin-left: -1.5rem;
+  border: none; 
+}
